@@ -1,0 +1,32 @@
+{
+  "name": "meeting-minutes-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/index.js",
+    "client": "vite --config client/vite.config.js client",
+    "build": "vite build client",
+    "test": "vitest run",
+    "analyze": "node server/scripts/analyze-materials.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "archiver": "^7.0.1",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mammoth": "^1.11.0",
+    "multer": "^2.0.2",
+    "openai": "^6.10.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "vite": "^7.2.7",
+    "vitest": "^4.0.16",
+    "exceljs": "^4.4.0",
+    "docx": "^9.5.1"
+  },
+  "devDependencies": {}
+}
